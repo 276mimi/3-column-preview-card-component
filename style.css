@@ -1,0 +1,132 @@
+
+/* Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ## Colors
+
+   ### Primary */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-darkcyan: hsl(179, 100%, 13%);
+/* 
+
+   /* ### Neutral */
+   --Transparent-white: hsla(0, 0%, 100%, 0.75);
+   --Very-lightgray: hsl(0, 0%, 95%);
+}
+
+body{
+    border:  hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    background-color: bisque;
+}
+
+article{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 3rem;
+margin-bottom: 3rem;
+}
+
+header {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section:nth-child(1) {
+    background-color: var(--Bright-orange);
+    color: var(--Transparent-white);
+    width: 280px;
+    height:340px;
+    padding: 2rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    /* display: flex; 
+    flex-direction: column; */
+    /* width: 50%; */
+    
+}
+
+section:nth-child(2) {
+    background-color: var(--Dark-cyan);
+    color: var(--Transparent-white);
+    width: 280px;
+    height:340px;
+    padding: 2rem;
+    /* display: block;
+    width: 50%;
+    height: auto; */
+}
+
+section:nth-child(3) {
+    background-color: var(--Very-darkcyan);
+    color: var(--Transparent-white);
+    width: 280px;
+    height:340px;
+    padding: 2rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    /* display: block;
+    width: 50%;
+    height: auto; */
+}
+
+button {
+    display: flex;
+    padding: .8rem;
+    border-radius: 1rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border: none;
+    margin-top: 3rem;
+}
+
+.firstb:hover {
+    background-color: var(--Bright-orange);
+    color:var(--Transparent-white);
+    border-style: solid;
+}
+
+.secondb:hover {
+    background-color: var(--Dark-cyan);
+    color:var(--Transparent-white);
+    border-style: solid;
+}
+
+.thirdb:hover {
+    background-color: var(--Very-darkcyan);
+    color:var(--Transparent-white);
+    border-style: solid ;
+}
+
+section:nth-child(1) button {
+    color: var(--Bright-orange);
+}
+
+section:nth-child(2) button {
+    color: var(--Dark-cyan);
+}
+
+section:nth-child(3) button {
+    color: var(--Very-darkcyan);
+}
+
+@media screen and(min-width: 1440px) {
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+}
